@@ -14,8 +14,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity
-        extends AppCompatActivity
-        implements ProcessListener {
+        extends AppCompatActivity {
 
     private static final String TAG = "com.lyterk.MainActivity";
 
@@ -108,10 +107,5 @@ public class MainActivity
                 mPostRequest.post();
             }
         });
-    }
-
-    @Override
-    public void processingDone(String s) {
-        // Fuck this shit, apparently I'm just gonna have to override this twice.
     }
 }
